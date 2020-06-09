@@ -17,6 +17,14 @@ module.exports = {
                         presets: ['@babel/env', '@babel/react']
                     }
                 },
+            },
+            {
+                test: /\.less$/,
+                loaders: ["style-loader", "css-loader", "less-loader"]
+            }, 
+            {
+                test: /\.css$/,
+                loaders: ["style-loader", "css-loader"]
             }
         ]
     },
