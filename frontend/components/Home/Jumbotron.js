@@ -1,8 +1,16 @@
 import React from "react";
+import styled from "styled-components";
+
+const Section = styled.section`
+    background-color: #d74234;
+    min-height: 550px;
+    padding: 100px 0;
+    color: #fff;
+`
 
 const Jumbotron = () => {
     return(
-       <section>
+       <Section>
            <div className="container">
                <div className="row">
                   <div className="col col-sm-12 col-md-5">
@@ -18,7 +26,7 @@ const Jumbotron = () => {
                   </div>
                </div>
            </div>
-       </section>
+       </Section>
     )
 }
 
