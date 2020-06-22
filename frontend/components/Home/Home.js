@@ -20,7 +20,7 @@ class Home extends Component{
        return(
            <div>
                <Jumbotron/>
-               <Table />
+               <Table video_modules = {this.state.video_modules}/>
            </div>
        )
    }
