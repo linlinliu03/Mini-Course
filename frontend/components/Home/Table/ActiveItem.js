@@ -1,5 +1,5 @@
 import React from "react";
-import Thumbnail from './Thumbnail';
+import Video from './Video';
 import styled from "styled-components";
 
 const Button = styled.a`
@@ -25,7 +25,7 @@ const ActiveItem = (props) => {
                     <div className="card px-5">
                         <div className="row">
                             <div className="col-md-10 offset-md-1">
-                                <Thumbnail />
+                                <Video />
                                 <div className="pt-4 pb-4">
                                     <h4>{props.title}</h4>
                                     <p>{props.description}</p>
