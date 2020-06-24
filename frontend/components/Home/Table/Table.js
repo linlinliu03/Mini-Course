@@ -8,17 +8,22 @@ class Table extends Component{
     }
 
     render(){
+      
+
         const item = this.props.video_modules.map(video => {
+            let handleVideoChange = this.props.handleVideoChange.bind(this, video)
             return (
                 video.active? (<ActiveItem
                     key={video.id}
                     title={video.title}
                     description={video.description}
+                    handleVideoChange = {handleVideoChange}
                 />):
                     (<Item 
                        key={video.id} 
                        title={video.title} 
                        description={video.description}
+                       handleVideoChange={handleVideoChange}
                     />)
         )})
 

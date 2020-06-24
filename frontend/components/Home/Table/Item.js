@@ -18,6 +18,7 @@ const Button = styled.a`
 ` 
 
 const Item = (props) => {
+   
    return(
        <div className="row pt-4 pb-4">
           <div className="col-md-10 offset-md-1">
@@ -32,7 +33,7 @@ const Item = (props) => {
                            <h4>{props.title}</h4>
                            <p>{props.description}</p>
                            <div className="cta-wrapper">
-                             <Button className="btn cta-btn">Watch This Video</Button>
+                              <Button onClick={props.handleVideoChange} className="btn cta-btn">Watch This Video</Button>
                            </div>
                         </div>
                       </div>
