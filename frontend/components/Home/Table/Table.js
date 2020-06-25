@@ -7,10 +7,12 @@ class Table extends Component{
         super()
     }
 
+
     render(){
       
 
         const item = this.props.video_modules.map(video => {
+            
             let handleVideoChange = this.props.handleVideoChange.bind(this, video)
             return (
                 video.active? (<ActiveItem
